@@ -1,0 +1,34 @@
+.heading-projects {
+    width: 100vw;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(360deg, #BBD8F2, #9CC9F1);
+    overflow: hidden;
+}
+
+.drawing {
+    justify-content: end;
+    max-width: 800px;
+    min-width: 600px;
+    width: 50%;
+    transform: translateY(-12%);
+}
+
+.projects {
+    margin-top: 70px;
+}
+
+.projects h1 {
+    font-size: 4.5rem;
+}
+
+.portfolio {
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.project-portfolio {
+    margin-bottom: 20px;
+}

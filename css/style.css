@@ -1,0 +1,291 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    color: #484848;
+}
+
+
+.heading {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    background-image: linear-gradient(360deg, white, #BBD8F2, #9CC9F1);
+    padding-bottom: 40px;
+}
+
+.hamburger-container {
+    display: none;
+}
+
+.close {
+    display: none;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-link {
+    color: #484848;
+}
+
+.drawing {
+    max-width: 800px;
+    width: 90%;
+    margin-top: -20px;
+}
+
+h1 {
+    font-family: 'Devonshire', cursive;
+    font-size: 6rem;
+    line-height: 1;
+    color: #444444;
+}
+
+h3 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 14px;
+}
+
+.intro {
+    text-align: center;
+}
+
+.about {
+    width: 100vw;
+}
+
+.what,
+.karin,
+.work-headline,
+.art-portfolio,
+.project-portfolio {
+    font-family: 'Devonshire', cursive;
+    font-size: 3.5rem;
+    color: #444444;
+}
+
+.karin {
+    margin-bottom: 15px;
+}
+.what {
+    margin-bottom: 30px;
+    margin-top: 140px;
+}
+
+.headline,
+.headline h3 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.design,
+.design h3,
+.design p {
+    text-align: left;
+}
+
+.development,
+.development h3,
+.development p {
+    text-align: right;
+}
+
+.intro {
+    white-space: nowrap;
+    opacity: 0;
+    animation: fadeIn 2s 4.5s forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+
+    50% {
+      transform: translate(0);
+    }
+
+    100% {
+      opacity: 1;
+    }
+}
+
+  /* .about {
+    max-width: 810px;
+    margin: auto;
+  } */
+
+
+.nav {
+    position: fixed;
+    width: 100%;
+    text-decoration: none;
+    padding: 20px 150px;
+    z-index: 4;
+}
+
+
+.profile-photo img {
+      width: 150px;
+      height: 150px;
+      margin-top: 80px;
+      margin-bottom: 25px;
+  }
+
+.nav-item {
+    /* rems are relative units of measurement
+    1 rem is equal to 16px */
+    margin-left: 1rem;
+    margin-right: 1rem;
+    flex-grow: 0;
+}
+
+.nav-item:nth-child(2) {
+    margin-right: auto;
+}
+
+.nav-link {
+    color: #484848;
+    text-decoration: none;
+}
+
+.about {
+    width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+.container {
+    width: 700px;
+    margin: auto;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.project-container {
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 100px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.work-container {
+    margin-top: 120px;
+    margin-bottom: 140px;
+}
+
+.design,
+.good-times,
+.good-times h3,
+.good-times p,
+.fifty-festival,
+.fifty-festival h3,
+.fifty-festival p {
+    text-align: left;
+}
+
+.development,
+.super-shapes,
+.super-shapes h3,
+.super-shapes p,
+.jiffy,
+.jiffy h3,
+.jiffy p {
+    text-align: right;
+}
+
+.design,
+.development {
+    margin-top: 30px;
+    padding-top: 1px
+}
+
+.mountain-icon {
+    float: left;
+    width: 150px;
+    height: 150px;
+    margin: 12px 50px 30px 0;
+
+}
+
+.mobile-icon {
+    float: right;
+    width: 150px;
+    height: 150px;
+    margin: 12px 0 30px 50px;
+}
+
+
+.good-img,
+.fifty-img {
+    float: left;
+    width: 400px;
+    height: auto;
+    margin: -20px 50px 30px 0;
+}
+
+.good-img {
+    margin: 0 50px 30px 0;
+}
+
+.super-img,
+.jiffy-img {
+    float: right;
+    width: 400px;
+    height: auto;
+    margin: -25px 0 30px 50px;
+}
+
+
+
+.footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+    margin-top: 100px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-decoration: none;
+    background-color: #BBD8F2;
+}
+
+.footer-nav {
+    display: flex;
+    align-items: center;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+}
+
+.letter {
+    padding-bottom: 0;
+}
+
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+    
+}
