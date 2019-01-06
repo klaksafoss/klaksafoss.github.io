@@ -1,0 +1,97 @@
+:root {
+    /* give the variable a name and value (needs two -- in front) */
+    --orange: #A1162F;
+    --lorange: #FFD6DD;
+    --charcoal: #414141;
+    --lgrey: #979797;
+    --white: #fff;
+}
+
+.register-image {
+    background-image: url(../assets/images/location.jpg);
+    background-position: center bottom;
+}
+
+/* most of the time, you'll want to override the default 
+input styles (which is quit a lot of stuff) */
+input {
+    border: none;
+    line-height: 1.5;
+    font-size: 16px;
+    height: 48px;
+    width: 100%;
+    padding: 0 12px;
+    outline: none;
+    color: var(--charcoal);
+}
+
+input::placeholder {
+    color: var(--lgrey);
+
+}
+
+.bg-lorange {
+    /* here we overwrite the default tachyons bg-orange class
+    (I had to rename to 'bg-lorange' to make it work) */
+    background-color: var(--lorange);
+} 
+
+.front p {
+    color: var(--orange);
+}
+
+.register {
+    /* using css grid to enable placing .front over .back */
+    display: grid;
+    place-items: center;
+    /* when .front slides up, it will be hidden from view,
+    chopping off edges off the box when .front element slides up */
+    overflow: hidden;
+}
+
+/* here we place .back behind .front */
+.front,
+.back {
+    grid-area: 1/1;
+}
+
+/* we add a transition effect to the translateY */
+.front {
+    transition: transform 0.5s ease;
+}
+
+/* we toggle this class using JS */
+.front.slide-up {
+    transform: translateY(-100%);
+}
+
+/* 'I'm ready for a good time' button */
+.button {
+    display: inline-block;
+    background-color: var(--orange);
+    color: var(--white);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border: none;
+    padding: 24px 72px;
+    font-family: 'HK-Grotesk-Bold', sans-serif;
+}
+
+/* REGISTER BUTTON */
+/* here we show a pointer cursor so the user knows it's clickable */
+button {
+    cursor: pointer;
+}
+
+.button-small {
+    font-size: 14px;
+    padding: 12px 20px
+}
+
+.button-outline {
+    color: var(--orange);
+    background-color: transparent;
+    border: solid 3px var(--orange);
+    color: var(--orange);
+}
+

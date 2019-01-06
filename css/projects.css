@@ -24,11 +24,43 @@
     font-size: 4.5rem;
 }
 
-.portfolio {
+.project-portfolio-header {
     margin-top: 70px;
-    margin-bottom: 70px;
+    margin-bottom: -50px;
+    padding: 0;
 }
 
 .project-portfolio {
     margin-bottom: 20px;
+}
+
+.project-container {
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 120px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.project-container img {
+    width: 350px;
+}
+
+.jiffy-img {
+    margin-bottom: 100px;
+}
+
+.good-times a,
+.super-shapes a,
+.fifty-festival a,
+.jiffy a {
+    text-decoration: none;
+    color: #484848;
+}
+
+.good-times a:hover,
+.super-shapes a:hover,
+.fifty-festival a:hover,
+.jiffy a:hover {
+    color: #EC7162;
 }

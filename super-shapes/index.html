@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Super Shapes</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/base.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/a-tachyons.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <script src="js/supershapes.js"></script>
+    <script src="assets/js/anime.min.js"></script>
+</head>
+<body>
+    <div class="page min-vh-100 flex items-stretch flex-column flex-row-ns overflow-hidden-ns">
+        <div class="w-100 vh-100 flex flex-wrap">
+            <div class="h-50 w-100 conveyor-belt overflow-hidden box">
+                <div class="h-100 w-200 conveyor flex items-stretch">
+                    <div class="h-100 w-25 bg-red box"></div>
+                    <div class="h-100 w-25 bg-purple box"></div>
+                    <div class="h-100 w-25 bg-yellow box"></div>
+                    <div class="h-100 w-25 bg-blue box"></div>
+                    <div class="h-100 w-25 bg-red box"></div>
+                    <div class="h-100 w-25 bg-purple box"></div>
+                    <div class="h-100 w-25 bg-yellow box"></div>
+                    <div class="h-100 w-25 bg-blue box"></div>
+                </div>
+            </div>
+
+            <div class="w-100 h-25 bg-blue box" id="wave">
+                <svg
+                    width="100%"
+                    height="100%"
+                    viewBox="0 0 828 303"
+                    fill="none"
+                    stroke="black"
+                    stroke-width="10"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g filter="url(#filter0_d)">
+                    <path d="M0 58.3769C195.979 52.1891 106.753 49.0953 99.3175 145.521C91.882 241.946 78.0731 301.761 233.688 209.976C389.303 118.192 115.782 186.772 174.735 113.551C233.688 40.3293 222.004 -32.8922 287.861 40.3293C353.719 113.551 282.232 168.725 384.523 113.551C476.5 58.3769 491.5 113.551 450.912 145.521C437.11 156.392 331.412 203.376 384.523 230.602C450.912 264.635 444.008 317.746 531.11 257.931C618.212 198.117 606.527 168.209 568.818 177.491C531.11 186.772 474.281 207.914 521.55 168.725C568.819 129.536 615.556 62.502 646.36 94.9876C677.165 127.473 749.927 236.79 828 230.602"/>
+                    </g>
+                    <defs>
+                        <filter id="filter0_d" x="-4.31567" y="0.000549316" width="837.106" height="302.999" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+                        <feOffset dy="4"/>
+                        <feGaussianBlur stdDeviation="2"/>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+                        </filter>
+                    </defs>
+                </svg>                        
+            </div>
+
+            <div class="h-25 w-100 bg-red pa3 flex flex-wrap box" id="stars">
+                <div class="h-50 w-20 flex items-center justify-center overflow-visible">
+                    <svg width="45" height="45" viewBox="0 0 492 492" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M246 57.2977L300.295 167.311L301.458 169.668L304.06 170.046L425.467 187.688L337.616 273.321L335.733 275.156L336.178 277.747L356.916 398.663L248.327 341.574L246 340.351L243.673 341.574L135.084 398.663L155.822 277.747L156.267 275.156L154.384 273.321L66.5335 187.688L187.94 170.046L190.542 169.668L191.705 167.311L246 57.2977Z" stroke="black" stroke-width="35"/>
+                        <path d="M246 11.2977L313.814 148.704L314.977 151.061L317.579 151.439L469.215 173.473L359.49 280.429L357.608 282.263L358.052 284.854L383.954 435.878L248.327 364.574L246 363.351L243.673 364.574L108.045 435.878L133.948 284.854L134.392 282.263L132.51 280.429L22.7849 173.473L174.421 151.439L177.023 151.061L178.186 148.704L246 11.2977Z" stroke="transparent" stroke-width="10"/>
+                    </svg> 
+                </div>
+            </div>
+        </div>
+        
+        <div class="w-100 vh-100 flex flex-wrap">
+            <div class="h-25 w-100 bg-blue flex justify-center items-center box" id="letters">
+                <svg
+                    width="100%"
+                    height="100%"
+                    viewBox="0 0 845 136"
+                    fill="none"
+                    stroke="black"
+                    stroke-width="3"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M42.9201 107.016C64.8081 107.016 80.3601 95.496 80.3601 76.056C80.3601 54.744 63.2241 49.416 47.9601 44.808C32.2641 40.056 29.8161 36.888 29.8161 32.28C29.8161 28.248 33.4161 24.648 40.6161 24.648C49.8321 24.648 54.5841 29.112 58.0401 36.312L77.4801 24.936C70.1361 10.104 57.1761 2.18396 40.6161 2.18396C23.1921 2.18396 6.7761 13.416 6.7761 32.856C6.7761 52.152 21.4641 59.352 36.4401 63.528C51.5601 67.704 57.3201 70.152 57.3201 76.344C57.3201 80.232 54.5841 84.552 43.6401 84.552C32.2641 84.552 26.0721 78.936 22.4721 70.584L2.6001 82.104C8.2161 96.936 21.7521 107.016 42.9201 107.016Z"/>
+                    <path d="M130.466 33V72.312C130.466 82.536 124.994 87.144 117.074 87.144C110.162 87.144 104.546 82.968 104.546 74.04V33H82.9465V77.208C82.9465 96.648 95.3305 107.016 109.874 107.016C119.378 107.016 126.578 103.56 130.466 98.232V105H152.066V33H130.466Z"/>
+                    <path d="M203.764 30.984C194.116 30.984 187.06 34.296 182.308 39.768V33H160.708V133.8H182.308V98.232C187.06 103.704 194.116 107.016 203.764 107.016C222.628 107.016 238.18 90.456 238.18 69C238.18 47.544 222.628 30.984 203.764 30.984ZM199.444 86.568C189.508 86.568 182.308 79.8 182.308 69C182.308 58.2 189.508 51.432 199.444 51.432C209.38 51.432 216.58 58.2 216.58 69C216.58 79.8 209.38 86.568 199.444 86.568Z"/>
+                    <path d="M262.522 77.64H313.642C314.218 74.904 314.506 72.024 314.506 69C314.506 47.256 298.954 30.984 277.93 30.984C255.178 30.984 239.626 47.544 239.626 69C239.626 90.456 254.89 107.016 279.514 107.016C293.194 107.016 303.85 101.976 310.906 92.184L293.626 82.248C290.746 85.416 285.706 87.72 279.802 87.72C271.882 87.72 265.258 85.128 262.522 77.64ZM262.09 61.512C264.106 54.168 269.578 50.136 277.786 50.136C284.266 50.136 290.746 53.16 293.05 61.512H262.09Z"/>
+                    <path d="M341.158 45.816V33H319.558V105H341.158V72.456C341.158 58.2 353.83 54.6 362.758 56.04V31.56C353.686 31.56 344.038 36.168 341.158 45.816Z"/>
+                    <path d="M430.454 107.016C452.342 107.016 467.895 95.496 467.895 76.056C467.895 54.744 450.758 49.416 435.494 44.808C419.798 40.056 417.35 36.888 417.35 32.28C417.35 28.248 420.95 24.648 428.15 24.648C437.366 24.648 442.118 29.112 445.574 36.312L465.014 24.936C457.67 10.104 444.71 2.18396 428.15 2.18396C410.726 2.18396 394.31 13.416 394.31 32.856C394.31 52.152 408.998 59.352 423.974 63.528C439.094 67.704 444.854 70.152 444.854 76.344C444.854 80.232 442.118 84.552 431.174 84.552C419.799 84.552 413.607 78.936 410.007 70.584L390.134 82.104C395.75 96.936 409.286 107.016 430.454 107.016Z"/>
+                    <path d="M513.681 30.984C504.177 30.984 496.977 34.44 493.089 39.768V4.19996H471.489V105H493.089V65.688C493.089 55.464 498.561 50.856 506.481 50.856C513.393 50.856 519.009 55.032 519.009 63.96V105H540.609V60.792C540.609 41.352 528.225 30.984 513.681 30.984Z"/>
+                    <path d="M600.514 33V39.768C595.762 34.296 588.706 30.984 579.058 30.984C560.194 30.984 544.642 47.544 544.642 69C544.642 90.456 560.194 107.016 579.058 107.016C588.706 107.016 595.762 103.704 600.514 98.232V105H622.114V33H600.514ZM583.378 86.568C573.442 86.568 566.242 79.8 566.242 69C566.242 58.2 573.442 51.432 583.378 51.432C593.314 51.432 600.514 58.2 600.514 69C600.514 79.8 593.314 86.568 583.378 86.568Z"/>
+                    <path d="M673.817 30.984C664.169 30.984 657.113 34.296 652.361 39.768V33H630.761V133.8H652.361V98.232C657.113 103.704 664.169 107.016 673.817 107.016C692.681 107.016 708.233 90.456 708.233 69C708.233 47.544 692.681 30.984 673.817 30.984ZM669.497 86.568C659.561 86.568 652.361 79.8 652.361 69C652.361 58.2 659.561 51.432 669.497 51.432C679.433 51.432 686.633 58.2 686.633 69C686.633 79.8 679.433 86.568 669.497 86.568Z"/>
+                    <path d="M732.576 77.64H783.695C784.271 74.904 784.559 72.024 784.559 69C784.559 47.256 769.007 30.984 747.983 30.984C725.231 30.984 709.679 47.544 709.679 69C709.679 90.456 724.943 107.016 749.567 107.016C763.247 107.016 773.903 101.976 780.959 92.184L763.68 82.248C760.8 85.416 755.759 87.72 749.855 87.72C741.935 87.72 735.311 85.128 732.576 77.64ZM732.143 61.512C734.159 54.168 739.631 50.136 747.839 50.136C754.319 50.136 760.799 53.16 763.103 61.512H732.143Z"/>
+                    <path d="M807.246 54.024C807.246 51.432 809.55 49.992 813.294 49.992C818.046 49.992 820.926 52.584 822.942 56.328L841.374 46.392C835.326 36.168 824.958 30.984 813.294 30.984C798.318 30.984 785.07 38.904 785.07 54.6C785.07 79.512 820.494 75.336 820.494 83.256C820.494 86.136 817.902 87.72 812.718 87.72C806.382 87.72 802.35 84.696 800.478 79.224L781.758 89.88C787.374 101.544 798.318 107.016 812.718 107.016C828.27 107.016 842.67 99.96 842.67 83.4C842.67 56.76 807.246 62.232 807.246 54.024Z"/>
+                </svg>
+            </div>
+            
+            <div class="h-25 w-100 bg-red pa3 flex flex-wrap justify-around items-center box" id="dots">
+                <div class="w-10">
+                    <div class="dot center"></div>
+                </div>
+            </div>
+
+            <div class="h-50 w-100 bg-yellow tunnel box" id="tunnel">
+                <svg
+                    stroke="black"
+                    stroke-width="5"
+                    width="100%"
+                    height="100%"
+                    viewBox="0 0 400 400" 
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="200" cy="200" r="10%"/>
+                    <circle cx="200" cy="200" r="20%"/>
+                    <circle cx="200" cy="200" r="30%"/>
+                    <circle cx="200" cy="200" r="40%"/>
+                    <circle cx="200" cy="200" r="50%"/>
+                    <circle cx="200" cy="200" r="60%"/>
+                    <circle cx="200" cy="200" r="70%"/>
+                    <circle cx="200" cy="200" r="80%"/>
+                    <circle cx="200" cy="200" r="90%"/>
+                    <circle cx="200" cy="200" r="100%"/>
+                    <circle cx="200" cy="200" r="110%"/>
+                    <circle cx="200" cy="200" r="120%"/>   
+                </svg>
+            </div>
+        </div>
+
+        <div class="w-100 vh-100 flex flex-wrap">
+            <div class="h-50 w-100 pa3 bg-purple box" id="zigzag">
+                <svg
+                    stroke="black"
+                    stroke-width="10"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                    width="100%"
+                    height="100%"
+                    viewBox="0 0 514 532"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M505.334 5.5C256.363 36.2421 5.6663 5 20.5 28C58.2292 86.5 549.834 26 505.334 68.5C460.834 111 -14.6662 47 13.3337 92C41.3336 137 528.834 85 505.334 115.5C481.834 146 -11.1662 112.5 13.3337 164.5C37.8336 216.5 551.334 132 505.334 184.5C459.334 237 1.33381 182.5 13.3337 209C25.3336 235.5 552.334 211 505.334 248C458.334 285 -0.166193 220 13.3337 274C26.8336 328 536.334 266 505.334 315C474.334 364 4.83381 297.5 13.3337 330.5C21.8336 363.5 510.334 327 505.334 361.5C500.334 396 -51.1662 338.5 13.3337 399C77.8336 459.5 541.334 375.5 505.334 430C469.334 484.5 -62.1661 410 13.3337 467.5C88.8335 525 532.834 438.5 505.334 497C477.834 555.5 58.5 506.5 13.3337 512.5"/>
+                </svg>
+            </div>
+
+            <div class="h-25 w-100 flex flex-wrap" id="flashes">
+                <div class="h-50 w-50 bg-blue box flash"></div>
+                <div class="h-50 w-50 bg-red box flash"></div>
+                <div class="h-50 w-50 bg-purple box flash"></div>
+                <div class="h-50 w-50 bg-yellow box flash"></div>
+            </div>
+
+            <div class="h-25 w-100 flex flex-wrap">
+                
+                <div class="h-100 w-50 bg-blue pa3 flex flex-wrap justify-around items-center box" id="circles">
+                    <div class="w-20">
+                        <div class="circle-dot br-100 center"></div>
+                    </div>
+                </div>
+
+                <div class="h-100 w-50 bg-purple box squares" id="squares">
+                    <svg
+                        width="100%"
+                        height="100%"
+                        viewBox="0 0 200 200"
+                        version="1.1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <desc>Created with Sketch.</desc>
+                        <defs></defs>
+                        <g stroke="#000" stroke-width="5px" fill="none" fillRule="evenodd">
+                            <rect height="25%" width="25%" x="50%" y="50%" />
+                            <rect height="50%" width="50%" x="50%" y="50%" />
+                            <rect height="75%" width="75%" x="50%" y="50%" />
+                            <rect height="100%" width="100%" x="50%" y="50%" />
+                            <rect height="125%" width="125%" x="50%" y="50%" />
+                            <rect height="150%" width="150%" x="50%" y="50%" />
+                        </g>
+                    </svg>
+                </div>
+            </div>            
+        </div>
+    </div>
+</body>
+</html>

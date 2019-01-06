@@ -1,0 +1,95 @@
+body {
+    background-color: black;
+    color: white;
+    font-size: 48px;
+}
+
+.tunnel circle,
+#stars path,
+#letters path,
+.squares rect {
+    /* by default, elements transform from their top left corner
+    so here we're telling our circles to transform from the center */
+    transform-origin: center;
+}
+
+.squares rect {
+    transform: translate(-50%, -50%);
+    transform-box: fill-box;
+}
+
+#dots .dot {
+    transform-origin: top left;
+}
+
+#stars {
+    transform-origin: center;
+}
+
+.w-200 { width: 200%; }
+
+.bg-yellow {
+    background-color: #FFEE58;
+}
+
+.bg-red {
+    background-color: #EC407A;
+}
+
+.bg-blue {
+    background-color: #29B6F6;
+}
+
+.bg-purple {
+    background-color: #66BB6A;
+}
+ .box {
+     /* using the inset keyword we can put shadows inside elements */
+     box-shadow: inset 0 0 0 4px #000000;
+ }
+
+ .conveyor-belt {
+     border-left: solid 4px #000000;
+     border-right: solid 4px #000000;
+ }
+
+ .dot {
+     width: 10px;
+     height: 10px;
+     background-color: #000000;
+ }
+
+ .circle-dot {
+     width: 10px;
+     height: 10px;
+     background-color: #000000;
+ }
+
+ .page {
+    border-left: solid 4px black;
+    border-right: solid 4px black;
+    position: relative;
+}
+
+ /* these are called pseudo elements, which are extra elements
+we can insert into the html using css (usually just for styling
+purposes) */
+
+.page:after,
+.page:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background-color: #000;
+  z-index: 3;
+}
+
+.page:before {
+  top: 0;
+}
+
+.page:after {
+  bottom: 0;
+}

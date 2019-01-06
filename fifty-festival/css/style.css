@@ -1,0 +1,243 @@
+body {
+  font-family: 'LunchType-Regular', sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.section {
+  min-height: 100vh;
+  display: flex;
+}
+
+/* here we have a little helper class that adds padding to our sections
+that can be reused and does just one thing */
+.section-pad {
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+.container {
+  max-width: 810px;
+  margin: auto;
+}
+
+.intro {
+  background-image: url(../assets/images/festival.jpg);
+  color: #fff;
+}
+
+.intro p {
+  font-size: 36px;
+  line-height: 1.2;
+}
+
+.logo {
+  display: block;
+  text-align: center;
+  margin-bottom: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 112px;
+}
+
+.logo img {
+  width: 100%;
+}
+
+.bg-cover {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  50% {
+    transform: translate(0);
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.appear {
+  opacity: 0;
+  animation: fadeIn 2s 1.5s forwards;
+}
+
+.target {
+  margin-bottom: 60px;
+  mix-blend-mode: difference;
+  animation: rotate 5s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg)
+  } to {
+      transform: rotate(359deg)
+  }
+}
+
+.marquee {
+  color: #FFEECF;
+  position: absolute;
+  top: 3vh;
+  left: 0;
+  width: 100%;
+  /* each letter will be 5% of the viewport width (vw) */
+  font-size: 5vw;
+  line-height: 1;
+  /* this will stop the long text from causing scroll bars by hanging outside of the marquee box area */
+  overflow: hidden; 
+}
+
+@keyframes moveLeft {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-3000vw);
+  }
+}
+
+.marquee span {
+  animation: moveLeft 400s linear infinite; 
+  /* this will ensure that the text all stays on the same line */
+  white-space: nowrap;
+  /* our span is inline by default, so here we tell it to be block */
+  display: block;
+  /* this will let us add our animation */
+  position: relative;
+}
+
+.mix-difference {
+  mix-blend-mode: difference;
+}
+
+.day-1 {
+  background-color: #FFA462;
+}
+
+.day-2 {
+  background-image: url(../assets/images/silk.jpg);
+  color: #FFEECF;
+  background-size: 130%;
+  background-repeat: no-repeat;
+}
+
+.day-3 {
+  background-color: #9D62FF;
+}
+
+.day {
+  /* so our shapes position in relation to our day sections */
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+}
+
+.day .container {
+  position: relative;
+  z-index: 2;
+}
+
+.date {
+  font-size: 28px;
+  color: #FFEECF;
+  margin-bottom: 48px;
+  line-height: 1;
+}
+
+.lineup h2 {
+  font-size: 56px;
+  line-height: 1;
+  margin-bottom: 6px;
+}
+
+.lineup p {
+  font-size: 21px;
+}
+
+.lineup li {
+  margin-bottom: 24px;
+}
+
+.scroll-to {
+  position: absolute;
+  left: 50%;
+  bottom: 2vh;
+
+  width: 64px;
+  height: 32px;
+
+  background-image: url(../assets/images/down-arrow.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+
+  transform: translateX(-50%);
+}
+
+.scroll-to-d2 {
+  position: absolute;
+  left: 50%;
+  bottom: 2vh;
+
+  width: 64px;
+  height: 32px;
+
+  background-image: url(../assets/images/down-arrow-light.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+
+  transform: translateX(-50%);
+}
+
+.scroll-to-intro {
+  background-image: url(../assets/images/down-arrow-light.svg);
+}
+
+@media (max-width: 640px) {
+
+  /* here we reset our marquee back to it's default position */
+  .marquee {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 90vw;
+    margin-bottom: 24px;
+    mix-blend-mode: normal;
+  }
+
+  .day-2,
+  .intro {
+    background-size: auto 120vh;
+  }
+
+  .logo {
+    max-width: 64px;
+    margin-bottom: 24px;
+  }
+
+  .intro p {
+    font-size: 20px;
+  }
+
+  .scroll-to,
+  .scroll-to-d2 {
+    display: none;
+  }
+
+  .lineup h2 {
+    font-size: 30px;
+  }
+
+}
