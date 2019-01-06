@@ -245,6 +245,7 @@ h3 {
     background-color:  #BBD8F2;
     border-radius: 100%;
     overflow: hidden;
+    -webkit-mask-image: -webkit-radial-gradient(white, black);
 }
 
 .des-icon {
@@ -268,6 +269,7 @@ h3 {
     background-color:  #EC7162;
     border-radius: 100%;
     overflow: hidden;
+    -webkit-mask-image: -webkit-radial-gradient(white, black);
 }
 
 .dev-icon {
